@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>{{>header}}</h1>
+            <p>{{message}}</p>
+        </header>
+
+        <div>
+
+            <form>
+                <input type="text" placeholder="Enter Location" required>
+                <button>Search</button>
+            </form>
+
+            <br>
+
+            <p id="msg-1"></p>
+            <p>Location : <span id="msg-2"></span></p>
+            <p>Temperature : <span id="msg-3"></span></p>
+            <p>FeelsLike : <span id="msg-4"></span></p>
+            <p>Humidity : <span id="msg-5"></span></p>
+            <p>Weather : <span id="msg-6"></span></p>
+            
+
+        </div>
+    </div>
+
+
+
+    <footer>
+        <h1>{{>footer}}</h1>
+
+    </footer>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
