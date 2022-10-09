@@ -5,6 +5,7 @@ const geoCode = require('./utils/geoCode');
 const forcast = require('./utils/forcast');
 
 const app = express();
+const port =process.env.PORT || 3000
 
 
 //for static page
@@ -103,6 +104,6 @@ app.get('/*' , (req,res)=>{
 })
 
 
-app.listen(3000 , ()=>{
-    console.log('app hosted successfully')
+app.listen(port , ()=>{
+    console.log('app hosted successfully' + port)
 })
